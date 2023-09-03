@@ -10,6 +10,6 @@ ENV ADMIN_EMAIL={ADMIN_EMAIL}
 ENV ADMIN_PASSWORD={ADMIN_PASSWORD}
 
 # Copy the host directories into the image
-COPY ./database /directus/database
-COPY ./uploads /directus/uploads
-COPY ./extensions /directus/extensions
+# COPY ./database /directus/database
+# COPY ./uploads /directus/uploads
+# COPY ./extensions /directus/extensions
