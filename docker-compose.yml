@@ -12,18 +12,8 @@ services:
     volumes:
       - $PWD/pgdata:/var/lib/postgresql/data
 
-  pgadmin:
-    image: dpage/pgadmin4:latest
-    environment:
-      PGADMIN_DEFAULT_EMAIL: '${KEY}'
-      PGADMIN_DEFAULT_PASSWORD: '${SECRET}'
-    ports:
-      - '5050:80'
-    volumes:
-      - $PWD/pgadmindata:/var/lib/pgadmin
-
   directus:
-    image: directus/directus:9.24.0
+    image: directus/directus
     environment:
       KEY: '${KEY}'
       SECRET: '${SECRET}'
