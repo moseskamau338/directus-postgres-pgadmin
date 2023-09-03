@@ -6,8 +6,8 @@ ENV DATABASE_DRIVER=sqlite
 ENV DATABASE_NAME=/directus/database/directus.sqlite
 ENV KEY=zzfO9h8VwdTgaq0ABEZmSFPRp0Catekaz7hSaQ7GtMPrvYFl10
 ENV SECRET=1nt4uR8CviIBTWFULeG6couRmepKewVPT8UMHDAy2AzmFjUkX6
-ENV ADMIN_EMAIL=moseskamau338@gmail.com
-ENV ADMIN_PASSWORD=password
+ENV ADMIN_EMAIL={ADMIN_EMAIL}
+ENV ADMIN_PASSWORD={ADMIN_PASSWORD}
 
 # Copy the host directories into the image
 COPY ./database /directus/database
